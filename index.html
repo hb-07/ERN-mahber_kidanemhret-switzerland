@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title> ማሕበር ቅድስ ኪዳነምህረት ስዊዘርላንድ</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+<style>
+h1 {
+ background-color: gold;
+ padding:20px;
+ color:blue;
+ text-align: center;
+}
+.navigate {
+  display: flex;
+  flex-wrap: wrap;
+  font-size:20px;
+  margin: 20px 0px 0px 0px;
+}
+.page {
+    padding:10px;
+    color: white;
+    font-weight: bold;
+}
+h2 {
+  color:gold
+}
+b {
+  color: red;
+  font-size: 20px;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+
+}
+.w3-display-container {
+   background-color: #4c4f4c;
+}
+
+body {
+  font-family:"Times New Roman", serif;
+  background-color: ;
+}
+h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
+</style>
+<body>
+
+<!-- Navigation (Sits on top) -->
+<h1>
+  ማሕበር ኪዳነምህረት ስዊዘርላንድ
+  <div class="navigate">
+    <div class="page">
+      <a href="#ቀንዲ-ዕላማታት-ማሕበር" >Mission</a>
+    </div>
+    <div class="page">
+      <a href="#ክትረኽቡና-ምስትደልዩ" >Contact</a>
+    </div>
+    <div class="page">
+      <a href="#ብዛዕባ-ማሕበር">About</a>
+    </div>
+    <div class="page">
+      <a href="{{ url_for('loginForm') }}">Login</a>
+    </div>
+    <div class="page">
+      <a href="{{ url_for('adminLoginForm') }}">Admin</a>
+    </div>
+
+  </div>
+</h1>
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+
+<!-- Image in Display Container -->
+<div class="w3-padding-top-48">
+<div class="w3-display-container">
+<img src="{{ url_for('static', filename='/images/kdanemhret.jpg') }}" alt="kdanemhret" style="width:100%">
+
+<div class="w3-display-bottomleft w3-padding-small w3-opacity w3-hide-small">
+<h2>ቅድስት ኪዳነምህረት ማሕበርና ትባሪኽ  </h2>
+</div>
+
+</div>
+</div>
+
+<!-- About -->
+<div id="ብዛዕባ-ማሕበር" class="w3-padding-top-64">
+<div class="w3-row">
+
+<div class="w3-half w3-padding-large w3-hide-small">
+<img src="{{ url_for('static', filename='images/kdistDinglMariam.jpg') }}" class="w3-round w3-image w3-opacity-min" alt="weladit amlak" style="width:100%">
+</div>
+
+<div class="w3-half w3-padding-large">
+<h1 class="w3-center">ብዛዕባ-ማሕበር</h1><br>
+<h5 class="w3-center"> ማሕበር <b>ቅድስት ኪዳነምህረት</b> since early 2020</h5>
+<p class="w3-large"></p>
+<p class="w3-large w3-text-grey w3-hide-medium">ማሕበር ክዳነምህረት ብምብግጋስ ውሑዳት ሰባት ኣብ መጀመርያ 2020 ተመስሪታ፣ እዛ ናጻ ረብሓ ዝኾነት ማሕበር ብ 6 ሰባት ጥራይ ተበጊሳ፣ ቅንዲ ዕላማ እዛ ማሕበር ነፍሲ ወከፍ ኣባል ካብ ዘለዎ ብፍቅዱ ብ ውሑድ 20.- ፍርንክ ወርሓዊ ብምውጻእ፣ ኣብ ነፍሲ ወከፍ ሰለስተ ወርሒ ኣኪብካ ንኣብ ትሑት መነባቢሮ ንዚርከብ ወገን፣ ንዕለታዊ ህወቱ ንምምራሕ ብፍሉይ ዝተሸገረ፣ ናኣብነት ኣላዪ ንዘይ ብሎም ድኻታት ስድራቤት፣ ብጥዕና ብስንክልና ምኽንያት ናባዪ ንዝሰኣኑ፣ ንካልእ ኣብዚ ንዘይ ተጥቕሰ ሽግራትን ውን ኣጽኒዓ፣ ንወገና ብገንዘብን ብሞራልን ኣለኹ ብምባል ርሕራሄን ተስፋን ንወገናታ ብምልጋስ ብመንፈስ ምስኦም እትነብር ማሕበር ምዃና ፍሉይ ይገብራ። ኩሉ ስራሕ እዚ ማሕበር ብጽፉፍን ብመጽናዕትን ብዝተወደበ መልክዕን ብሓሳብን ሪኢቶን ኩሉ ኣባል ማእከል ብምግባር ዝማሓደርን ዝተወሰነን ዩ፣ ንፍሲ ወከፍ ስርሕ ካብ መጀመርታ ክሳብ ፍጻመ ናይቲ ዝዋሃብ ሓገዝ ብሰነድን ብዝተራጋገጸን መስርሕ ይካይድ። ኩሉ ዝተሰረሐ ስራሕ ብዚርዝር ብዝተሰነደ መልክዕ ብድጋፍ መራጋገጽን ንኹሉ ኣባል ብመደብ ይሕበር። ንግዝዩኡ ብ 4 ኮሚተ ግዚኦም ብምውፋይ ስራሕ ናይዛ ማሕበር ዕውት ንምግባር ዝነጥፉ ኣሕዋትና ኪዳነምህረት ኣብ ዝገብሩዎ ኩሉ ስራሕ ኣሳልጦን ጽፈትን ዝሎዎ ንኽሰርሑ፣ ኣብ ህወቶም ጥዕናን ጥበብን ምስትዋዓልን ትዕድለልና። ብዓቕምና ኣብ ጎድኒ ወገና ክንከዊን እትብሉ ኣሕዋት ኣሓት፣ መደብን ስራሕን ማሕበር ኪዳነምህረት ነዚ ይመስል፣
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- Menu -->
+<div id="ቀንዲ-ዕላማታት-ማሕበር" class="w3-padding-top-64">
+<h1 class="w3-center">ቀንዲ ዕላማ ማሕበር</h1>
+<div class="w3-row">
+
+<div class="w3-col l6 m6 w3-padding-large">
+
+<h5>ተኻፋሊ በረኸት ምዃን፣ ናይ እግዚኣብሄር ስራሕ ምስራሕ ዩ</h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ መጽሓፍ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠</p><br>
+
+<h5>ንጽጉም ወገንካ ተስፋ ምዃን</h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ ምጽሓፍ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠</p><br>
+
+<h5>ሰብ ንዝሰኣነ ወገንካ ሰብ ምዃን</h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ መጽሓፍ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠</p><br>
+
+<h5>ንዝወደቐ ወገንካ ብሓገዝን ብሞራልን ሓይሊ ምዃን  </h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ መጽሓፍ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠ </p>
+
+<h5> ኩሉ ንግበሮ ንጥፈታት ብስም ኪዳነምህረት ዩ </h5>
+<p class="w3-text-grey">ኣባል እዚ ማሕበር፣
+  <ul>
+    <li>ሽግርን ጸገምን ወገኑ ዘጨንቖ፣ ርህሩህ፣</li>
+    <li>ካብ ዘለዎ ንጽጉም ሓዉ ምስ ኣካፊለ ተደሲቱ ዝሕዲር ሰብ ዩ።</li>
+  </ul>
+ </p>
+
+</div>
+
+<div class="w3-col l6 m6 w3-padding-large">
+<img src="{{ url_for('static', filename='images/higi.jpg') }}" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+</div>
+
+</div>
+
+<div class="w3-container w3-text-grey">
+<p>ዓቕሚ እዚ ማህበር ኣብዚ እዋን እዚ ብ 22 ኣባላት ዝካየድ ዘሎ ዪ።
+</p>
+</div>
+</div>
+
+<!-- Contact -->
+<div id="ክትረኽቡና-ምስትደልዩ" class="w3-container w3-padding-64">
+<h1>ክትረኽቡና-ምስትደልዩ</h1>
+
+<p class="w3-text-blue-grey w3-large">
+<b>ማሕበር ኪዳነምህረት ስዊዘርላንድ, Mühlemattstrasse 70, 3007 Bern, BE</b></p>
+<p>You can also contact us by phone 0794725068 or email mahber_kidanemhret@gmail.com, or send us a message here:<br>
+ተወሳኺ ሕበረታ ወይ ክትሓቱ ምስትደልዩ በዚ ኣብ ላዕሊ ተቐሚጡ ዝሎ ቁጽሪ ተልፎን ወይ ብ email ክትረኽቡና ትኽእሉ ኢኹም።  ንክርስትያውነት ማለት ንጽጉም ወገንካ ካብ ዘለካ ምክፋል፣ ኣብ ሰማይ በት ከም ምህናጽ ዩ፣ ኣብ መረት ከለኻ ድማ ብበረኸትን ብጥዕናን ምምባር ዩ።</p>
+
+<form action="{{url_for('message')}}" method="post">
+<p><input class="w3-input w3-padding-16" type="text" placeholder="ስም" required name="name"></p>
+<p><input class="w3-input w3-padding-16" type="email" placeholder="ኢሜልካ ኣብዚ ሃብ" required name="email"></p>
+<p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+<p><input class="w3-input w3-padding-16" type="text" placeholder="መልእኽቲ \ ሕቶ " required name="message"></p>
+<p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>{{response}}</p>
+</form>
+
+<img src="{{ url_for('static', filename='images/homebest.jpg') }}" class="w3-image" style="width:100%">
+<p class="w3-center w3-padding">Powered by <a href="{{ url_for('index') }}" title="by Haileab bsrat"><b>ማሕበር ኪዳነምህረት ስዊዘርላንድ</b></a></p>
+</div>
+</div>
+
+</body>
+</html>
